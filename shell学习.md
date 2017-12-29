@@ -190,7 +190,7 @@ grep [option] pattern file
 
 5. **用例**：
 - 查找指定进程
-- - ps -ef|grep svn : 查找svn进程
+- - ps -ef | grep svn : 查找svn进程
 -
 - grep不显示本身进程
 - - ps aux|grep \\[s]sh
@@ -244,3 +244,6 @@ grep [option] pattern file
 
 - cat /etc/passwd :查看所有用户信息
 - su - root :su命令切换用户
+- kill -9 pid : pid为进程号，该命令用来关闭某个进程
+- netstat -anp|grep 80 : 查看有80字样的端口的情况
+- echo 1 > /proc/sys/vm/drop_caches
