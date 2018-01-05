@@ -55,6 +55,8 @@ tar -zxvf zipped_file_name :把文件解压（前五个是独立的命令，压�
 - - tar -cZf jpg.tar.Z *.jpg   : 将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
 - - rar a jpg.rar *.jpg : rar格式的压缩，需要先下载rar for linux
 - - zip jpg.zip *.jpg : zip格式的压缩，需要先下载zip for linux
+- - jar -cvf file.war file_path : 将文件夹file_path打包成war包并取名为file.war
+- - jar -xvf file.war: 将文件file.war解压到当前路径下
 -
 - 解压：
 - - tar -xvf file.tar : 解压 tar包
@@ -70,7 +72,7 @@ tar -zxvf zipped_file_name :把文件解压（前五个是独立的命令，压�
 
 ### 移动文件mv
 - mv some_file_name path :将文件some_file_name移动到一个path下，原path不会再有这个文件
-
+- cp -r file_path_1 file_path_2 : 将文件夹1复制到文件夹2中
 
 ### 远程拷贝文件scp
 1. **简介**：
