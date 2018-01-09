@@ -55,7 +55,7 @@ tar -zxvf zipped_file_name :把文件解压（前五个是独立的命令，压�
 - - tar -cZf jpg.tar.Z *.jpg   : 将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
 - - rar a jpg.rar *.jpg : rar格式的压缩，需要先下载rar for linux
 - - zip jpg.zip *.jpg : zip格式的压缩，需要先下载zip for linux
-- - jar -cvf file.war file_path : 将文件夹file_path打包成war包并取名为file.war
+- - jar -cvf file.war . : 打包war包，要打包war包必须先进入要打包的文件夹，所以最后的参数是个“.”，不然的话war包解压后第一级目录不是原来的目录了，被多生成了一级目录。
 - - jar -xvf file.war: 将文件file.war解压到当前路径下
 -
 - 解压：
