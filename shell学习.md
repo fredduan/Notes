@@ -303,3 +303,5 @@ grep [option] pattern file
 - kill -9 pid : pid为进程号，该命令用来关闭某个进程
 - netstat -anp|grep 80 : 查看有80字样的端口的情况
 - echo 1 > /proc/sys/vm/drop_caches
+- sz file_name :发送文件到本地
+- rz ：本地文件上传到远端
